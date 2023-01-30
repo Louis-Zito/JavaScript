@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 15px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  text-align: center;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  border: 1px black solid;
+}
+
+.btn-vendingItems {
+  background-color: white;
+  padding: 10px;
+}
+
+.vend-items {
+  display: grid;
+  /* auto-fit: use full parent space, includes auto-fill; min: smallest col size; 
+    1fr: each col gets 1 fraction of width w/no partials 
+  */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 15px;
+}
+
+.form-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.form-btns > button {
+  flex: 1 1 140px;
+}
+
+.coin-btn-placement {
+  justify-content: center;
+  -webkit-box-shadow: 5px 7px 6px 3px rgba(0, 0, 0, 0.79);
+  box-shadow: 5px 7px 6px 3px rgba(0, 0, 0, 0.79);
+}
+
+.make-purchase {
+  justify-content: center;
+  -webkit-box-shadow: 5px 7px 6px 3px rgba(0, 0, 0, 0.79);
+  box-shadow: 5px 7px 6px 3px rgba(0, 0, 0, 0.79);
+}
+
+.change-return {
+  justify-content: center;
+  -webkit-box-shadow: 5px 7px 6px 3px rgba(0, 0, 0, 0.79);
+  box-shadow: 5px 7px 6px 3px rgba(0, 0, 0, 0.79);
+}
+
+.itemID {
+  text-align: left;
+}
+
+.item-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#money-input,
+#change-input-box,
+#change-return-btn {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .form-side {
+    margin-top: 3rem;
+  }
+}
